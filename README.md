@@ -6,7 +6,7 @@ An example of a passing solution to the final phase of the JetBrains Academy Jav
 
 This project has two command line applications. One is a server that allows CRUD operations to a JSON data structure. The other is a client that can make CRUD requests to the server.
 
-JCommander to used to interpret the client side commands.
+JCommander is used to interpret the client side commands.
 
 The client and server communicate through Java sockets.
 
@@ -17,6 +17,8 @@ The server uses GSON to manipulate its JSON data structure. The client is allowe
 The relative directory structure was kept the same as the one used in my JetBrains Academy solution.
 
 The server program logs to a file called "json-database-server.log" in your home directory. The client program logs to "json-database-client.log" in the same directory.
+
+If the /src/server/data/db.json data file is not present when the server is first started, a new file will be created. This is where the JSON data structure is stored.
 
 When testing the application, I would start the server in IntelliJ and then start the client in IntelliJ. It can be a bit tedious to test the client because the command line options need to be entered in the run configuration program arguments between each run.
 
